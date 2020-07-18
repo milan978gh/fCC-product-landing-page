@@ -14,6 +14,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+img{
+    display: block;
+}
 
 /* header */
 #header{
@@ -49,7 +52,7 @@ body{
     padding-top: 40px;
 }
 #welcome-info{
-    margin: 20vh auto;
+    margin: 100px auto;
 }
 #welcome-info h1{
     font-size: 3.5rem;
@@ -79,11 +82,36 @@ body{
     padding: 0 10px;
     cursor: pointer;
 }
-#welcome-video{
+#welcome-image{
     width: 100%;
 }
-#welcome-video iframe{
+#welcome-image img{
     max-width: 100%;
+}
+
+/* product */
+#product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px auto;
+    padding: 50px 0 0;
+}
+#product-cards{
+    width: 100%;
+}
+#product .card{
+    border: 1px solid #3f1010;
+    margin: 10px;
+}
+.card h3{
+    padding: 10px 0 5px;
+}
+.card img{
+    width: 100%;
+    padding: 5px;
 }
 
 /* media query */
