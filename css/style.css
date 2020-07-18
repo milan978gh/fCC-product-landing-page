@@ -10,7 +10,7 @@
 body, html{
     font-family: Georgia, serif;
     color: #3f1010;
-    background: linear-gradient(to bottom right, #00ff00 0%, #ffff00 100%);
+    background: linear-gradient(to bottom right, #99ff00 0%, #ffff00 100%);
     background-repeat: no-repeat;
     background-size: cover;
     scroll-behavior: smooth;
@@ -40,7 +40,8 @@ img{
 }
 #navbar a:hover{
     color: #3f1010;
-    background-color: greenyellow;
+    background: linear-gradient(to bottom right, #99ff00 0%, #ffff00 100%);
+    border-radius: 15px;
 }
 
 /* welcome */
@@ -53,6 +54,7 @@ img{
     padding-top: 40px;
 }
 #welcome-info{
+    width: 100%;
     margin: 100px auto;
 }
 #welcome-info h1{
@@ -89,6 +91,7 @@ img{
 }
 #welcome-image img{
     max-width: 100%;
+    margin: auto auto;
 }
 
 /* product */
@@ -138,7 +141,23 @@ img{
 
 /* media query */
 @media(min-width: 900px){
+    #header{
+        justify-content: space-around;
+    }
+    #header-img img{
+        max-width: 250px;
+    }
+    #navbar a{
+        font-size: 120%;
+        margin: 0 10px;
+    }
+
     #welcome{
         flex-direction: row;
+        width: 100%;
+    }
+    
+    #product-cards{
+        display: flex;
     }
 }
