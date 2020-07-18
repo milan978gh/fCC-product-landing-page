@@ -7,12 +7,13 @@
     list-style: none;
     box-sizing: border-box;
 }
-body{
+body, html{
     font-family: Georgia, serif;
     color: #3f1010;
     background: linear-gradient(to bottom right, #00ff00 0%, #ffff00 100%);
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-behavior: smooth;
 }
 img{
     display: block;
@@ -78,6 +79,7 @@ img{
     font-size: 120%;
 }
 #submit{
+    color: #3f1010;
     font-size: 120%;
     padding: 0 10px;
     cursor: pointer;
@@ -112,6 +114,26 @@ img{
 .card img{
     width: 100%;
     padding: 5px;
+}
+
+/* footer */
+#contact{
+    text-align: center;
+    font-weight: 600;
+    padding: 50px 0 100px;
+}
+#contact .email{
+    margin: 10px 0;
+}
+#contact a{
+    color: red;
+    transition: all .3s;
+}
+#contact a:hover{
+    color: #fff;
+    background-color: #3f1010;
+    padding: 5px 30px;
+    border-radius: 30px;
 }
 
 /* media query */
