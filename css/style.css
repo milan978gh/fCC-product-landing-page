@@ -79,6 +79,12 @@ body{
     padding: 0 10px;
     cursor: pointer;
 }
+#welcome-video{
+    width: 100%;
+}
+#welcome-video iframe{
+    max-width: 100%;
+}
 
 /* media query */
 @media(min-width: 900px){
